@@ -1,0 +1,5 @@
+applications:
+- name: Helion-Env
+  mem: 64M
+  instances: 1
+  ignores: ["node_modules", ".git"]
