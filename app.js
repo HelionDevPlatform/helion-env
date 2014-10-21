@@ -4,8 +4,7 @@ var PORT = (process.env.PORT || 3000)
 var fs = require('fs')
   , express = require('express')
   , app = express.createServer()
-  , domain = require('domain')
-  , shelljs = require('shelljs/global');
+  , domain = require('domain');
 
 // Config
 app.set('views', __dirname + '/app/views');
