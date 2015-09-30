@@ -83,13 +83,6 @@ if (!module.parent) {
 
   d.run (function () {
     app.listen(PORT);
-    if(which('stackato')) {
-      process.env.Stackato_CLI_Path = which('stackato');
-    }
-    else {
-      process.env.Stackato_CLI_Path = "./binaries/stackato";
-    }
-    console.log("Stackato CLI Path :" + process.env.Stackato_CLI_Path);
     console.log('App started on port: ' + PORT);
   });
 }
